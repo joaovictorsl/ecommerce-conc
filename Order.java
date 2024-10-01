@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.UUID;
 
-public class Request {
+public class Order {
     private UUID id;
     private HashMap<String, Integer> itens;
 
