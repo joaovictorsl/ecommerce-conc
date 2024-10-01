@@ -5,7 +5,7 @@ public class Order {
     private UUID id;
     private HashMap<String, Integer> itens;
 
-    public Request(UUID id) {
+    public Order(UUID id) {
         this.id = id;
         itens = new HashMap<String, Integer>();
     }
