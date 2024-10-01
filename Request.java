@@ -1,17 +1,17 @@
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.UUID;
 
 public class Request {
     private UUID id;
-    private ArrayList<String> itens;
+    private HashMap<String, Integer> itens;
 
     public Request(UUID id) {
         this.id = id;
-        itens = new ArrayList<String>();
+        itens = new HashMap<String, Integer>();
     }
 
-    public void addItem(String item) {
-        itens.add(item);
+    public void addItem(String item, Integer quantity) {
+        itens.put(item, quantity);
     }
 
     public UUID getId() {
