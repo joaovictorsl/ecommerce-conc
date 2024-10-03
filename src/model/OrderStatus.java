@@ -1,5 +1,7 @@
+package src.model;
 public enum OrderStatus {
     DONE,
     PENDING,
-    CANCELLED;
+    WAITING_FOR_STOCK,
+    REJECTED;
 }
