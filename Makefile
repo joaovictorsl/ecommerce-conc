@@ -1,8 +1,8 @@
 build:
-	javac *.java
+	javac $(shell find src -name "*.java")
 
 run: build
-	java Main
+	java src.Main
 
 clean:
-	rm *.class
+	find src -name "*.class" -delete
